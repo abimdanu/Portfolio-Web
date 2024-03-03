@@ -135,7 +135,6 @@ nav ul {
     flex-flow: column nowrap;
 }
 
-
 .content article {
     display: flex;
     flex-direction: column;
@@ -158,18 +157,20 @@ nav ul {
     color: #EEEEEE;
 }
 
-/* Projects */
+/* Projects, Experiences */
 .card {
     display: flex;
     flex: 1;
 
     border: 3px solid;
     border-radius: 40px;
-    padding: 20px;
+    padding: 2rem;
     margin-block: 1.5rem;
     margin-inline: 3.5rem;
 }
 
+/* TODO: image hovering at the top is covering up navbar */
+/* TODO: space between 'border to image' and  'image to text' not symmetrical (due to .card's padding */
 .card-photo {
     flex: 1;
     display: flex;
@@ -211,4 +212,24 @@ nav ul {
 .card-text p {
     font-size: 1.1rem;
     margin-block: 1rem;
+}
+
+/* Courses & Certifications */
+/* TODO: wrapped flex items filling empty spaces */
+#certificates .grid-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#certificates .card {
+    padding: 0.3rem;
+    flex-direction: column;
+    align-items: center;
+}
+
+#certificates .card-photo {
+    margin-inline: 0.3rem;
+    margin-block: 0.5rem;
+    flex-grow: 1;
 }
