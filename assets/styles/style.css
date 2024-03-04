@@ -100,10 +100,9 @@ nav ul {
 }
 
 .navbar-container .nav-list ul {
-    padding-left: 0;
     display: flex;
     justify-content: center;
-    gap: 2rem 1rem;
+    gap: 1.4rem 1rem;
 }
 
 .navbar-container .nav-list li {
@@ -144,6 +143,7 @@ nav ul {
 }
 
 .content h2 {
+    text-align: center;
     font-size: 2.7rem;
     margin-top: 4rem;
     margin-bottom: 3.3rem;
@@ -206,7 +206,7 @@ nav ul {
     flex-grow: 3;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: center; */
 }
 
 .card-text p {
@@ -215,17 +215,26 @@ nav ul {
 }
 
 /* Courses & Certifications */
-/* TODO: wrapped flex items filling empty spaces */
 #certificates .grid-container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+
+    justify-content: center;
 }
 
 #certificates .card {
     padding: 0.3rem;
     flex-direction: column;
-    align-items: center;
+    flex-grow: 0;
+
+    text-align: center;
+}
+
+#certificates .card-text {
+    padding: 0.4rem;
+    margin-block: 0rem;
+    margin-inline: 0;
 }
 
 #certificates .card-photo {
