@@ -11,6 +11,12 @@ body {
     background-color: #212123;
 }
 
+main {
+    padding: 20px;
+    display: flex;
+    gap: 1.5rem;
+}
+
 header {
     display: inline;
 }
@@ -87,6 +93,8 @@ nav {
 
     position: sticky;
     top: 0;
+
+    z-index: 9999999;
 }
 
 nav li {
@@ -158,7 +166,7 @@ nav ul {
 }
 
 /* Projects, Experiences */
-.card {
+.content .card {
     display: flex;
     flex: 1;
 
@@ -171,7 +179,7 @@ nav ul {
 
 /* TODO: image hovering at the top is covering up navbar */
 /* TODO: space between 'border to image' and  'image to text' not symmetrical (due to .card's padding */
-.card-photo {
+.content .card-photo {
     flex: 1;
     display: flex;
     margin-inline: 2rem;
@@ -179,7 +187,7 @@ nav ul {
     flex-grow: 1;
 }
 
-.card-photo img {
+.content .card-photo img {
     width: 200px;
     min-width: 200px;
 
@@ -191,7 +199,7 @@ nav ul {
     margin: auto;
 }
 
-.card img:hover {
+.content .card img:hover {
     transform: scale(1.015);
     /* border: 5px solid #EEEEEE; */
 
@@ -201,7 +209,7 @@ nav ul {
     border: 5px solid transparent;
 }
 
-.card-text {
+.content .card-text {
     flex: 1 1;
     flex-grow: 3;
     display: flex;
@@ -209,7 +217,7 @@ nav ul {
     /* justify-content: center; */
 }
 
-.card-text p {
+.content .card-text p {
     font-size: 1.1rem;
     margin-block: 1rem;
 }
@@ -241,4 +249,36 @@ nav ul {
     margin-inline: 0.3rem;
     margin-block: 0.5rem;
     flex-grow: 1;
+}
+
+/* Skills (<aside>) */
+aside {
+    flex: 1;
+    height: fit-content;
+    margin-inline: 1rem;
+    margin-block: 2rem;
+
+    border: 3px solid #c1c1c1;
+    border-radius: 50px;
+}
+
+.skills-card header {
+    text-align: center;
+    padding: 0.4rem;
+}
+
+.skills-card section {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.skills-card img {
+    width: 100px;
+    min-width: 100px;
+    max-width: 115px;
+
+    border: 3px solid #c1c1c1;
+    border-radius: 25px;
 }
