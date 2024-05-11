@@ -1,0 +1,25 @@
+{
+  "name": "portfolio-web",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node www/index.js",
+    "start-dev": "nodemon www/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abimdanu/Portfolio-Web.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/abimdanu/Portfolio-Web/issues"
+  },
+  "homepage": "https://github.com/abimdanu/Portfolio-Web#readme",
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}
